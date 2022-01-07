@@ -1,0 +1,84 @@
+.wraper .container .wraper-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    margin-top:50px;
+}
+
+.wraper .container .wraper-img .image1{
+    background-image: url('../assets/images/h1-bn1.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s;
+
+}
+.wraper .container .wraper-img .image2{
+    background-image: url('../assets/images/h1-bn2.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s;
+    
+}
+.wraper .container .wraper-img .content{
+        padding: 40px 20px ;
+        text-align: right;
+}
+.wraper .container .wraper-img .content .text1{
+    color: #fc0;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Londrina Solid",cursive;
+}
+.wraper .container .wraper-img .content .text1 span{
+    color: #cc3528;
+}
+.wraper .container .wraper-img .content .price{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.wraper .container .wraper-img .content .text2{
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Londrina Solid",cursive;
+}
+.wraper .container .wraper-img .content .text2 span{
+    color: #fc0;
+}
+.wraper .container .wraper-img .content .price{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.wraper .container .wraper-img .content button{
+    padding: 5px 25px;
+    color: white;
+    background-color:transparent;
+    border:2px solid white;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+.wraper .container .wraper-img .content button:hover{
+    background-color: #cc3528;
+    border:2px solid transparent;
+}
+.wraper .container .wraper-img .image1:hover{
+    transform: scale(1.1);
+}
+.wraper .container .wraper-img .image2:hover{
+    transform: scale(1.1);
+}
+/*responsive*/
+@media(max-width: 600px) {
+    .wraper .container .wraper-img{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr ;
+    }
+}

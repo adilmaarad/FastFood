@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+.detail-container{
+    margin-top: 100px;
+}
+.detail .detail-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.detail-container .left .img-container img{
+    width: 80%;
+    margin-left: 50px;
+    border-radius: 25px;
+}
+.detail-container .right .title{
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Londrina;
+}
+.detail-container .right .sauce{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: Londrina;
+    margin-top: 30px;
+}
+.detail-container .right .price{
+    font-size: 28px;
+    font-weight: 800;
+    font-family: Londrina;
+    margin-top: 30px;
+    color: #cc3528;
+}
+.detail-container .right .size{
+    color: #000;
+    font-weight: 500;
+    font-family: Londrina;
+    margin-top: 30px;
+}
+.detail-container .right .size span{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 8px;
+}
+.detail-container .right button{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Londrina;
+    margin-top: 30px;
+    border: 1px solid white;
+    padding: 8px 15px;
+    background-color:#cc3528 ;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.detail-container .right button:hover{
+    background-color: black;
+    color: #cc3528;
+    cursor: pointer;
+}
+.detail-container .right .sku{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Londrina;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #666;
+}
+.detail-container .right .ctg{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Londrina;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #cc3528;
+}
+.detail-container .right .tags{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Londrina;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #666;
+}
+.detail-container .right .share-on{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+}
+.detail-container .right .share-on .icons{
+    font-size:  100px;
+}
+hr{
+    background-color: #cc3528;
+}
+.detail-container .right .share-on .instgrame:hover{
+       color: #405de6;
+        cursor: pointer;
+        
+}
+.detail-container .right .share-on .facebook:hover{
+    color: #4267B2;
+    cursor: pointer;
+}
+.detail-container .right .share-on .whatsapp:hover{
+    color: #25D366;
+    cursor: pointer;
+}
+.detail-container .right .share-on .twitter:hover{
+    color: #1DA1F2;
+    cursor: pointer;
+}
+.detail-container .right .img-payment{
+    display: flex;
+    justify-content:space-around ;
+    margin-top: 30px;
+}
+Link{
+    text-decoration: inherit;
+}
+/*responsive*/
+@media (max-width:976px) {
+    .detail .detail-container{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr ;
+    }
+    .detail-container .left .img-container img{
+        margin-left: 20px;
+    }
+    .detail-container .right .title{
+        text-align: center;
+        font-size: 28px;
+    }
+    .detail-container .right .img-payment img{
+            width: 50%;
+    }
+    .detail-container .right .img-payment {
+        margin-top:0px
+    }
+}
