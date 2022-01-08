@@ -1,0 +1,89 @@
+.feautered .container .title1{
+    color: #cc3528;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-align: center;
+}
+.feautered .container .title2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 25px;
+}
+.feautered .container .title2::after{
+    content: "";
+    position: absolute;
+    top: 60px;
+    background-image: url('../assets/images/download.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 10px;
+}
+.feautered  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top:80px;
+}
+.feautered  .cards .card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.feautered  .cards .card img{
+    height: 100%;
+    width: 90%;
+    color: #000;
+    font-family: "IBM Plex Sans",sans-serif;
+    transition: 0.5s;
+  
+}
+.feautered  .cards .card .content .title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    font-family: "IBM Plex Sans",sans-serif;
+    margin-right: 60px;
+    margin-top: 25px;
+}
+.feautered  .cards .card .content .sauce{
+    font-family: "IBM Plex Sans",sans-serif;
+    font-size: .875rem;
+    color: #999;
+    margin-top: 20px;
+}
+.feautered  .cards .card .content .price{
+    color: #cc3528;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.feautered  .cards .card:hover img{
+    transform: scale(1.1)
+}
+/*responsive*/
+@media(max-width: 600px) {
+    .feautered  .cards{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .feautered .container .title1{
+        font-size: 38px;
+    }
+}
+
+.feautered  .cards a:link{
+    
+    text-decoration: none;
+}

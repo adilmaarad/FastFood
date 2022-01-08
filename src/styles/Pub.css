@@ -1,0 +1,61 @@
+.pub{
+    width: 100%;
+    height: 90vh;
+    margin: 100px 0;
+}
+
+.pub .max-width{
+    height: 100%;
+}
+
+.pub .container{
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/h1-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pub .container .content{
+    padding-left: 20%;
+}
+
+.pub .container .title1{
+    font-size: 70px;
+    font-weight: 700;
+    color: #fc0;
+}
+
+.pub .container .title2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.pub .container img{
+    margin-top: 20px;
+    width: 30%;
+}
+
+.pub .container .btns{
+    margin-top: 50px;
+}
+
+.pub .container .btns button{
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 15px 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+}
+.pub .container .btns button:hover{
+    background-color: #cc3528;
+    border: 1px solid #cc3528;
+}

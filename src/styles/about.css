@@ -1,0 +1,56 @@
+.about .container .background{
+    background-image: url( '../assets/images/bg-iconbox.png');
+    margin-top: 50px;
+    padding: 30px 0px;
+}
+.about .container .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.about .container .cards .card .image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.about .container .cards .card .image-container:hover{
+    transform: translateY(-10px);
+}
+.about .container .cards .card .title{
+    color: #000;
+    font-family: "Londrina Solid", Sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+.about .container .cards .card .title:hover{
+    color: #cc3528;
+    cursor: pointer;
+}
+.about .container .cards .card .text{
+    margin-top: 10px;
+    font-family: "IBM Plex Sans",Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    text-align: center;
+}
+
+/*responsive*/
+@media(max-width: 600px) {
+    .about .container .cards{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr ;
+    }
+    .about .container .cards .card .text{
+        font-size:16px;
+    }
+}

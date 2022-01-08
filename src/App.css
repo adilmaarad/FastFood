@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+.max-width{
+  padding: 0px 120px ;
+  
+}
+/*responsive*/ 
+
+@media(max-width: 976px){
+  .max-width{
+      padding: 0px 40px;
+  }
+}
+@media(max-width: 1200px){
+  .max-width{
+      padding: 0px 80px;
+  }
+}
+@media(max-width: 680px){
+  .max-width{
+      padding: 0px 20px;
+  }
+}

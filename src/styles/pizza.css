@@ -1,0 +1,57 @@
+.pizza  .container .title{
+    font-family: "Londrina Solid",cursive;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+
+}
+.pizza .cards{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+.pizza .cards .card{
+    border: 1px solid #e0e0e0;
+    padding:40px 30px;
+}
+.pizza .cards .card img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pizza .cards .card .text .title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    font-family: "IBM Plex Sans",sans-serif;
+}
+.pizza .cards .card .text .price{
+    margin-top: 20px;
+    text-align: center;
+    color: #cc3528;
+    font-size: 16px;
+    font-weight: 700;
+}
+.pizza .cards .card:hover{
+    border: 3px dashed #cc3528;
+}
+.pizza .cards a:link{
+    text-decoration: none;
+}
+
+
+
+/*responsive*/
+@media(max-width: 600px) {
+    .pizza .cards{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+
+    }
+}
